@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.css' rel='stylesheet'/>
+  </head>
+  <body ng-app='tabs'>
+    <md-toolbar ng-controller="NavigationController as vm"
+            ng-include="'navbar.html'"
+            class="md-default-theme" >
+    </md-toolbar>
+
+    <md-content ui-view md-scroll-y class="md-default-theme" role="main" flex>
+    </md-content>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.js"></script>
+    <script src="navigation.controller.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
